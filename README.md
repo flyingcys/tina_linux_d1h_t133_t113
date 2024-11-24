@@ -12,17 +12,25 @@ Tina-Linux for F133/T113/D1-H
 
 ### SDK download from GitHub
 ``` sh
-  $ git clone  https://github.com/mangopi-sbc/Tina-Linux.git
-  $ cd Tina-Linux/
+  $ git clone  https://github.com/flyingcys/tina_linux_d1h_t133_t113.git 
+  $ cd tina_linux_d1h_t133_t113
   $ git submodule update --init --recursive
 
-  // download the static file
+  # download the static file
   $ wget https://github.com/flyingcys/tina_linux_d1_t133_t113/releases/download/0.0.1/prebuilt.tar.gz .
+  # or
+  $ wget https://riscv-tools.oss-cn-shanghai.aliyuncs.com/tina-linux/prebuilt.tar.gz .
   $ tar xzvf prebuilt.tar.gz
-  $ wget http://dl.mangopi.org/tina/dl.tar .
+  # dl.tar.gz
+  $ wget https://riscv-tools.oss-cn-shanghai.aliyuncs.com/tina-linux/dl.tar.gz .
   $ tar xvf dl.tar
+  
   $ wget https://github.com/flyingcys/tina_linux_d1_t133_t113/releases/download/0.0.1/riscv64-linux-x86_64-20200528.tar.xz -P ./lichee/brandy-2.0/tools/toolchain/
   $ wget https://github.com/flyingcys/tina_linux_d1_t133_t113/releases/download/0.0.1/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi.tar.xz -P ./lichee/brandy-2.0/tools/toolchain/
+  
+  # or
+  $ wget https://riscv-tools.oss-cn-shanghai.aliyuncs.com/tina-linux/riscv64-linux-x86_64-20200528.tar.xz -P ./lichee/brandy-2.0/tools/toolchain/
+  $ wget https://riscv-tools.oss-cn-shanghai.aliyuncs.com/tina-linux/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi.tar.xz -P ./lichee/brandy-2.0/tools/toolchain/
   
 ```
 
